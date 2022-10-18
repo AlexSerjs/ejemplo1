@@ -1,0 +1,116 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio11_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JOptionPane.showMessageDialog(null, "Cobro de Llamada");
+		String minutoString = JOptionPane.showInputDialog("Cuantos minutos Has hablado");
+		int minuto = Integer.parseInt(minutoString);
+
+		String diaString = JOptionPane.showInputDialog(
+				"Dia de la llamada lunes(l) martes(m) miercoles(x) jueves(j) viernes(v) sabado(s) domingo(d)");
+		char dia = diaString.charAt(0);
+
+		double contador ;
+
+		if (dia == 'l' || dia == 'm' || dia == 'x' || dia == 'j' || dia == 'v' || dia == 's') {
+
+			String jornadaString = JOptionPane.showInputDialog("Que jornada es por la mañana ( m ) o la tarde ( t )");
+			char jornada = jornadaString.charAt(0);
+
+			if (jornada == 'm') {
+				if (minuto <= 5) {
+					contador = minuto * 100;
+					contador = (contador + (contador * 0.15));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+
+				}
+				
+				if (minuto <= 8) {
+					contador = (500 + (minuto - 5) * 80);
+					contador = (contador + (contador * 0.15));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+				} 
+				
+				else if (minuto <= 10) {
+					contador = (240 + 500 + (minuto - 8) * 70);
+					contador = (contador + (contador * 0.15));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+				}
+
+				else {
+					contador = (140 + 240 + 500 + (minuto - 10) * 50);
+					contador = (contador + (contador * 0.15));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+
+				}
+			}
+	
+
+			else if (jornada == 't') {
+				if (minuto <= 5) {
+					contador = minuto * 100;
+					contador = (contador + (contador * 0.10));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+
+				}
+				else if (minuto <= 8) {
+					contador = (500 + (minuto - 5) * 80);
+					contador = (contador + (contador * 0.10));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+				} else if (minuto <= 10) {
+					contador = (240 + 500 + (minuto - 8) * 70);
+					contador = (contador + (contador * 0.10));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+				}
+			
+
+				else {
+					contador = (140 + 240 + 500 + (minuto - 10) * 50);
+					contador = (contador + (contador * 0.10));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+				}
+
+			}}
+		//740+22.2
+	
+			else if (dia=='d') {
+				
+				if (minuto <= 5) {
+					contador = minuto * 100;
+					contador = (contador + (contador * 0.03));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+
+				}
+				
+				else if (minuto <= 8) {
+					contador = (500 + ((minuto - 5) * 80));
+					contador = (contador + (contador * 0.03));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+				} 
+				
+				else if (minuto <= 10) {
+					contador = (240 + 500 + (minuto - 8) * 70);
+					contador = (contador + (contador * 0.03));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+				}
+			
+
+				else {
+					contador = (140 + 240 + 500 + (minuto - 10) * 50);
+					contador = (contador + (contador * 0.03));
+					JOptionPane.showMessageDialog(null, "Lo que tienes que pagar es: " + contador / 100);
+				}
+				
+				
+			}
+			
+			
+		
+	}}
+		
+
+

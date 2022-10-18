@@ -1,0 +1,35 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio11_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JOptionPane.showMessageDialog(null,"Cobro de Llamada");
+		String minutoString=JOptionPane.showInputDialog("Cuantos minutos Has hablado");
+		int minuto=Integer.parseInt(minutoString);
+		
+		String diaString=JOptionPane.showInputDialog("Dia de la llamada lune(l) martes(m) miercoles(x) jueves(j) viernes(v) sabado(s)");
+		char dia=diaString.charAt(0);
+		
+		int contador;
+		
+	    if (dia=='l'||dia=='m'||dia=='x'||dia=='j'||dia=='v'||dia=='s') {
+		String jornadaString=JOptionPane.showInputDialog("Que jornada es por la mañana ( m ) o la tarde ( t )");
+		char jornada=jornadaString.charAt(0);
+		if (jornada=='m') {
+			if (minuto<=5) {
+				contador=minuto*100;
+				
+			}
+			
+		}
+		} else {
+
+		}
+		
+
+	}
+
+}

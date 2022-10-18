@@ -1,0 +1,47 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import java.util.Scanner;
+
+public class Ejercicio8_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Escribe tres numeros");
+				
+		System.out.print("1º numero:");
+		int num1=sc.nextInt();	
+		System.out.print("2º numero:");
+		int num2=sc.nextInt();
+        while (num1==num2) {
+			System.out.println("intentalo de nuevo numero igual a tu primer numero ");
+			num2=sc.nextInt();
+		}
+		System.out.print("3º numero:");
+		int num3=sc.nextInt();
+		while (num1==num3 || num2==num3 ) {
+			System.out.println("intentalo de nuevo numero igual a tu primer numero o segundo  ");
+			
+			num2=sc.nextInt();
+		}
+		
+		
+		if ((num1>num2) && (num1>num3)) {
+		if (num2>num3) {
+			System.out.println(num1+">"+num2+">"+num3);
+		}
+			else {
+				System.out.println(num1+">"+num3+">"+num2);
+			}
+		
+			
+		}	
+		}
+		
+		
+		sc.close();
+
+	}
+
+}

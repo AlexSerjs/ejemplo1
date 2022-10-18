@@ -1,0 +1,35 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut3.ejercicios;
+
+import java.util.Scanner;
+
+public class ut3_Ejercicio05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Scanner sc = new Scanner(System.in);
+	
+
+	
+	
+	System.out.println("Escribe un radio: ");
+	double radio =sc.nextDouble();
+	
+	System.out.println("TU nombre es: ");
+	String nombre = sc.nextLine();
+	int n= Integer.parseInt(nombre);
+	
+	System.out.println("Escribe el lado de un cuadrado");
+	int lado = sc.nextInt();
+	double perimetro = 2*radio*Math.PI;
+	int area = lado*lado;
+	System.out.println("Hola "+n+". El cuadrado tiene un área de "+area+" y la circunferencia tiene un perímetro de "+perimetro);
+	System.out.printf("Hola %s. El cuadrado tiene un área de %f	 y la circunferencia tiene un perímetro de %f\n",nombre,area,perimetro);
+
+	
+	
+	sc.close();
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import java.util.Scanner;
+
+public class Ejercicio6_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Escribe Algo: ");
+		
+		String cadena=sc.nextLine();
+		
+		if (cadena.length()==1 && cadena.equals(cadena.toUpperCase())) 
+				//(cadena.length()==1&& (cadena.compareTo("A")>=0)&&(cadena.compareTo("Z"))<=0) 
+		{
+			System.out.println("La cadena "+cadena+ " es una letra mayuscula");
+			
+		}
+		else {
+			System.out.println("La cadena "+cadena+ " no es una letra mayuscula");
+		}
+
+	}
+
+}

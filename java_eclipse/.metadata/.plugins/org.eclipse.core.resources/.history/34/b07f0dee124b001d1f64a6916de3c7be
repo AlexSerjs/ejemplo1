@@ -1,0 +1,28 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio5_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		JOptionPane.showMessageDialog(null, "Bienvenido Iniciar Secion");
+		
+		String usuario=JOptionPane.showInputDialog("Usuario");
+		String contrasenia=JOptionPane.showInputDialog("Contraseña");
+		
+		String nom="pepe";
+		String cod="asdasd";
+		
+		
+		if (usuario.equals(nom)&&contrasenia.equals(cod)) {
+			
+			JOptionPane.showMessageDialog(null, "Has Entrado al Sistema");
+			
+		}
+		
+
+	}
+
+}

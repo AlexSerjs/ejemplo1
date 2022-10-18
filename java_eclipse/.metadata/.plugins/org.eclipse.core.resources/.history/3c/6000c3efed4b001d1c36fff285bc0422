@@ -1,0 +1,63 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio11_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Ejercicio 11
+//		La política de cobro de una compañía telefónica es: cuando se realiza una llamada, 
+//		el cobro es por el tiempo que esta dura, de tal forma que los primeros cinco minutos 
+//		cuestan 1 euro cada minuto, los siguientes tres, 80 céntimos, los siguientes dos minutos, 
+//		70 céntimos, y a partir del décimo minuto, 50 céntimos. Además, se carga un impuesto de 3 %
+//		cuando es domingo, y si es otro día, en turno de mañana, 15 %, y en turno de tarde, 10 %. 
+//		Realice un algoritmo para determinar cuánto debe pagar por cada concepto una persona que 
+//		realiza una llamada.
+		
+		JOptionPane.showMessageDialog(null, "Calcular Cobro de Llamada");
+		String minutoString= JOptionPane.showInputDialog("Cuantos minutos has Hablado ");
+		int minuto=Integer.parseInt(minutoString);
+//		String diaString= JOptionPane.showInputDialog("Que dia es entre l-m-x-j-v-s//-d)? ");
+//		char dia=diaString.charAt(0);
+		double costo;
+		
+		if (minuto>=10) {
+			 costo=500+240+140+((double) (minuto-10)*50);
+		
+		}
+			else if ( minuto>=8 )  {
+			costo=((double)(minuto-5)*80)+500;
+			
+			}
+	        
+			else if (minuto>=5) {
+				costo= (double) (5*100);
+				 
+			}
+			
+			else  {
+					 
+					costo=50+240+140+((minuto-10)*50);
+					
+					}
+		JOptionPane.showMessageDialog(null,"costo: "+ costo/100);
+					
+				}
+	
+				 
+				}
+			
+		
+		
+			
+		
+		
+//		if (dia=='l'||dia=='m'||dia=='x'||dia=='j'||dia=='v'||dia=='s') {
+//			String turnoString= JOptionPane.showInputDialog("que turno es (mañana) !'m / t'! (tarde)");
+//			char turno=turnoString.charAt(0);
+//						
+//		}
+//		else {
+//			
+//		}

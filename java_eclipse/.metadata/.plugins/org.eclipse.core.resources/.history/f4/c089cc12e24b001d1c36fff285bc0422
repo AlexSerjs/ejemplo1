@@ -1,0 +1,35 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import java.util.Scanner;
+
+public class Ejercicio4_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("Escribe dos numeros ");
+		
+		System.out.print("Primer numero: ");
+		double num = sc.nextDouble();
+		
+		System.out.print("Segundo numero: ");
+		double num2 =sc.nextDouble();
+		
+		
+		if (num2 !=0) {
+			
+			Double cociente= num/num2;
+			System.out.println("Division de: "+num+" y "+num2+" es: "+cociente);
+			
+		}
+		else {
+			System.out.println("error no se puede Dividir a 0");
+		}
+		sc.close();
+
+	}
+
+}

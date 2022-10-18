@@ -1,0 +1,36 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios.condicional;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio01_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JOptionPane.showMessageDialog(null, "ESCRIBE DOS NUMEROS A CONTINUACION");
+		
+		String stringNum=JOptionPane.showInputDialog("Primer Nº");
+		int num = Integer.parseInt(stringNum);
+		
+        String stringNum1=JOptionPane.showInputDialog("Segundo  Nº");
+		int num1 = Integer.parseInt(stringNum1);
+		
+		if (num<num1) {
+			
+			JOptionPane.showMessageDialog(null,"El segundo numero es mayor");
+		}
+			else if (num>num1) {
+				JOptionPane.showMessageDialog(null, "El Primero numero es mayor");
+				
+			} 
+			else {
+				JOptionPane.showMessageDialog(null, "Son Iguales");
+
+			
+			
+		}
+		
+		
+
+	}
+
+}

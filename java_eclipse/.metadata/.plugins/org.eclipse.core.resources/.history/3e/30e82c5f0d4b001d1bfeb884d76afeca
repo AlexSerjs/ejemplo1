@@ -1,0 +1,33 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import java.util.Scanner;
+
+public class Ejercicio2_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num=sc.nextInt();
+		
+		if (num <0) {
+			
+			System.out.println("El numero es Negativo: "+num);
+			
+		} else if (0<num) {
+			System.out.println("El numero es ppositivo: "+num);
+			
+			
+		} else {
+			System.out.println("El numero es Cero");
+		}
+		{
+
+		}
+		
+		sc.close();
+
+	}
+
+}

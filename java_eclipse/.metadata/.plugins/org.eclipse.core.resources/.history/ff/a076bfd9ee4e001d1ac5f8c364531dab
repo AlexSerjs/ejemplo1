@@ -1,0 +1,49 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios.repetitivas;
+
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio02_Repetitivas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numAleatorio;
+		int intento;
+		int contador=10;
+		
+		numAleatorio = (int)(Math.random()*100+1);
+		
+		JOptionPane.showMessageDialog(null,"Adivina el numero 1 entre 100" );
+		String IntentoString=JOptionPane.showInputDialog("Escribe el un numero, Nº de intentos "+contador);
+		
+		do {
+			
+			intento=Integer.parseInt(IntentoString);
+			if (intento>numAleatorio ) {
+				JOptionPane.showMessageDialog(null,"El numero es Menor ");
+			
+				
+			} else if (intento<numAleatorio) {
+				
+				JOptionPane.showMessageDialog(null,"El numero es Mayor ");
+				
+			} 
+			else {
+			
+				JOptionPane.showMessageDialog(null,"Correcto ");
+			}
+			
+			contador--;
+			
+			String IntentoString=JOptionPane.showInputDialog("Escribe el un numero, Nº de intentos "+(contador-1));
+			
+		} while (intento != numAleatorio&& contador>0);
+		if (intento!=numAleatorio && contador==0) {
+			
+			JOptionPane.showMessageDialog(null,"Error se han acabado los intentos",null,JOptionPane.ERROR_MESSAGE);
+			
+		}
+
+	}
+
+}

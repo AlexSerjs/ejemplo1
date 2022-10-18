@@ -1,0 +1,19 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio3_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		JOptionPane.showInternalMessageDialog(null, "IMPAR O PAR");
+		String numString= JOptionPane.showInputDialog("Escribe un numero");
+		int num = 
+		
+		
+		
+		
+		}
+
+}

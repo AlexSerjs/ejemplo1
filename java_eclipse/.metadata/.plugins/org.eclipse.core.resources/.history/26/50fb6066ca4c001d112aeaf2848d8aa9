@@ -1,0 +1,8 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios.condicional;
+
+public class Snippet {
+	public static void main(String[] args) {
+		System.out.println("Tiene 31 dias");
+	}
+}
+

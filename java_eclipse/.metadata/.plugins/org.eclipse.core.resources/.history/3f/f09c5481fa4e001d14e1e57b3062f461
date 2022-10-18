@@ -1,0 +1,42 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios.basicos;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Ej13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner= new Scanner(System.in);
+		int parSuma=0;
+		int imparMulti=1;
+		int num;
+		int contador=1;
+	
+		System.out.println("Escribe un los numeros ");
+		
+		
+		do {
+			System.out.print("Nº" +(contador)+" .-");
+			num= scanner.nextInt();
+			contador++;
+			
+			if (num%2==0) {
+				parSuma=parSuma+num;
+				
+			}
+			else {
+				
+				imparMulti=imparMulti*num;
+			}
+			
+			
+			
+		} while (num!=0);
+		
+			System.out.println(""+parSuma);
+			System.out.println(""+imparMulti);
+
+	}
+
+}

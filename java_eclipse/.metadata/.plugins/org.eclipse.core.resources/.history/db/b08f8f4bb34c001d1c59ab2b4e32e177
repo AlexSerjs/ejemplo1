@@ -1,0 +1,10 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+public class Ejercicio04_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

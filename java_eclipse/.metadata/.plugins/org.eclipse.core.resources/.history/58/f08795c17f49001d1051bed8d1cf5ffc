@@ -1,0 +1,17 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios.condicionalesJava;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio1_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JOptionPane.showInputDialog(null, "ESCRIBE DOS NUMEROS A CONTINUACION");
+		
+		String num=JOptionPane.showInputDialog("pRIMER Nº");
+		
+		
+
+	}
+
+}

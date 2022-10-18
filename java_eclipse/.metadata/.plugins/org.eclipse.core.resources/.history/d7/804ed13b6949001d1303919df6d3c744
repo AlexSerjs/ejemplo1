@@ -1,0 +1,19 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut3.ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class ut3_Ejercicio06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String radio= JOptionPane.showInputDialog("");
+		String radio= JOptionPane.showInputDialog("");
+		String radio= JOptionPane.showInputDialog("");
+		
+		
+		double radio2= Double.parseDouble(radio);
+		double perimetro=
+
+	}
+
+}

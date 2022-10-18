@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+/home/alex/Escritorio/Clara del rey 22-23/Programación/Java Codigo/java_eclipse/.metadata/.plugins/org.eclipse.jdt.core
+2081096778.index
+4168597391.index
+1865797976.index
+3264998129.index

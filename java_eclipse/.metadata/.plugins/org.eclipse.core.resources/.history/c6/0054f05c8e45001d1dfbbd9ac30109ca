@@ -1,0 +1,18 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut2.ejemplos;
+
+
+
+public class UT2_Ejercicios {
+
+	public static void main(String[] args) {
+		
+		String cadena = " FRASE QUE QUIERO EN LA CADENA " ;
+		
+		System.out.println("longitud "+cadena.length());
+		System.out.println("longitud "+cadena.toLowerCase());
+		
+		
+
+	}
+
+}

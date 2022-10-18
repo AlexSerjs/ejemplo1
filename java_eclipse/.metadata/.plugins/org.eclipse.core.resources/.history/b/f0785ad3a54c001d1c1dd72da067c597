@@ -1,0 +1,82 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio11_Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JOptionPane.showMessageDialog(null,"Cobro de Llamada");
+		String minutoString=JOptionPane.showInputDialog("Cuantos minutos Has hablado");
+		int minuto=Integer.parseInt(minutoString);
+		
+		String diaString=JOptionPane.showInputDialog("Dia de la llamada lune(l) martes(m) miercoles(x) jueves(j) viernes(v) sabado(s) domingo(d)");
+		char dia=diaString.charAt(0);
+		
+		double contador = 0;
+		
+	    if (dia=='l'||dia=='m'||dia=='x'||dia=='j'||dia=='v'||dia=='s') {
+	    	
+		String jornadaString=JOptionPane.showInputDialog("Que jornada es por la mañana ( m ) o la tarde ( t )");
+		char jornada=jornadaString.charAt(0);
+		
+		if (jornada=='m') {
+			if (minuto<=5) {
+				contador=minuto*100;
+				contador=(contador+(contador*0.15));
+					
+			}
+			if (minuto<=8) {
+				contador=(50+(minuto-5)*80);
+				contador=(contador+(contador*0.15));
+			}
+			else if (minuto<=10) {
+				contador=(240+50+(minuto-8)*70);
+				contador=(contador+(contador*0.15));
+			}
+			
+			
+		else {
+			contador=(140+240+50+(minuto-10)*50);
+			contador=(contador+(contador*0.15));
+
+		}
+		}
+		
+		if (jornada=='t') {
+			if (minuto<=5) {
+				contador=minuto*100;
+				contador=(contador+(contador*0.10));
+					
+			}
+			if (minuto<=8) {
+				contador=(50+(minuto-5)*80);
+				contador=(contador+(contador*0.10));
+			}
+			else if (minuto<=10) {
+				contador=(240+50+(minuto-8)*70);
+				contador=(contador+(contador*0.10));
+			}
+			
+			
+		else {
+			contador=(140+240+50+(minuto-10)*50);
+			contador=(contador+(contador*0.10));
+            }
+			
+		}
+		JOptionPane.showMessageDialog(null,"Lo que tienes que pagar es: "+contador/10);
+	    }
+	    
+	    
+	    if (dia=='d') {
+	    	
+	    	contador=(contador+(contador*0.03));
+	    	JOptionPane.showMessageDialog(null,"Lo que tienes que pagar es: "+contador/100);
+		}
+	    
+	}
+
+	}
+
+

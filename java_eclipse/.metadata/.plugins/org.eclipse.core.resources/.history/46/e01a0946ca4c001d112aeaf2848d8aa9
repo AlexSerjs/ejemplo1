@@ -1,0 +1,70 @@
+package es.iesclaradelrey.dm1e.primerTrimestre.ut4.ejercicios;
+
+import java.util.Scanner;
+
+public class Ejercicio08_MathCondicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Escribe tres numeros");
+				
+		System.out.print("1º numero:");
+		int num1=sc.nextInt();	
+		
+		
+		System.out.print("2º numero:");
+		int num2=sc.nextInt();
+        while (num1==num2) {
+			System.out.println("intentalo de nuevo numero igual a tu primer numero ");
+			System.out.print("2º numero");
+			num2=sc.nextInt();
+		}
+		
+        
+        
+        
+        System.out.print("3º numero:");
+		int num3=sc.nextInt();
+		while (num1==num3 || num2==num3 ) {
+			System.out.println("intentalo de nuevo numero igual a tu primer numero o segundo  ");
+			System.out.print("3º numero");
+			num3=sc.nextInt();
+		}
+		 
+		int max = Math.max(num1,Math.max(num2, num3));
+		int min =Math.min(num1, Math.min(num2, num3));
+		
+		int centro;
+		
+		if (max!=num1&& min!=num1) {
+			centro=num1;
+			System.out.println(max+" > "+centro+" > "+min);
+					
+		}
+		else if (max!=num2&&min!=num2) {
+			centro=num2;
+			System.out.println(max+" > "+centro+" > "+min);
+		}
+		else {
+			centro=num3;
+		  System.out.println(max+" > "+centro+" > "+min);
+		}
+		
+		
+		
+		
+		
+		
+			sc.close();
+			
+		}	
+		
+		
+		
+		
+	}
+	
+
+	
